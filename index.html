@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="js.js"></script>
+    <title>Restaurant</title>
+</head>
+
+<body>
+    <div class="container">
+        
+        <div class="red"></div>
+        <div class="blue"> <h1>Main Courses</h1></div>
+        <div class="red"></div>
+        
+        <div class="red"><h2>Dynryp</h2>
+                <img src="media/dynryp-md.jpg" width="300">
+            <p>Dynrup - Russisk bulgur med skovsvampe...</p>
+            <button class="collapsible">Read more</button>
+            <div class="content">
+            <p>Russisk bulgur med skovsvampe fra det østlige Kirgisistan. Svampene minder om kantarelle, men med en mere støvet smag.</p>
+            </div>
+        </div>
+        <div class="blue"><h2>Caviar Pancakes</h2>
+            <img src="media/kaviarpandekager-md.jpg" width="300">
+            <p>Brændte pandekager med Bordyriske ørne-kaviar.</p>
+            <button class="collapsible">Read more</button>
+            <div class="content">
+            <p>Brændte pandekager med Bordyriske ørne-kaviar. Ørne laver kaviar på størrelse med peberkorn. Og de smager af kaviar. Ikke peber. Lækkert.</p>
+            </div>
+        </div>
+        <div class="red">
+            <h2>Tomato Soup</h2>
+            <img src="media/bulgarskbondesuppe-md.jpg" width="300">
+            <p>Cauceskus bulgarske bondesuppe</p>
+             <button class="collapsible">Read more</button>
+            <div class="content">
+            <p>Da Caucesku var i færd med at skrive sit navn med højhuse, var han nødt til at give håndværkerne solid kost, så de kunne arbejde 18 timer i døgnet, 7 dage om ugen: Bulgarsk bondesuppe. Suppen består af alt det bedste fra Bulgarien.</p>
+            </div>
+        </div>
+        <div class="red"></div>
+        <div class="blue"> <h1>Desserts</h1></div>
+        <div class="red"></div>
+        
+        <div class="red"><h2></h2>
+                <img src="media/borsjtj-md.jpg" width="300">
+            <p>Baltisk bondesuppe er en solid starter. Godt til dig, der skal drikke godt igennem under måltidet. Suppen består af ged, grønt og masser af løg.</p>
+            <ul>
+                <li>Order</li>
+                <li>Home Delivery</li>
+            </ul>
+        </div>
+        <div class="blue"><h2>Tomato Soup</h2>
+            <img src="media/borsjtj-md.jpg" width="300">
+            <p>Baltisk bondesuppe er en solid starter. Godt til dig, der skal drikke godt igennem under måltidet. Suppen består af ged, grønt og masser af løg.</p>
+        </div>
+        <div class="red">
+            <h2>Tomato Soup</h2>
+            <img src="media/borsjtj-md.jpg" width="300">
+            <p>Baltisk bondesuppe er en solid starter. Godt til dig, der skal drikke godt igennem under måltidet. Suppen består af ged, grønt og masser af løg.</p>
+        </div>
+         </div>
+        
+       
+           
+<script>
+    
+    var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+    
+</script>
+</body>
+</html>

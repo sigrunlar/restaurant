@@ -1,0 +1,75 @@
+body {
+    background-image: url(media/borsjtj.jpg);
+}
+
+.container {
+    background-color: ;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: minmax(300px auto);
+    grid-gap: 1em;
+    padding: 100px 50px;
+    margin: 0px 100px;
+}
+
+
+
+.red {
+    display: grid;
+    background-color: lightgray;
+    padding: 20px 20px;
+    margin: 10px 10px;
+    border: 1px solid black;
+    
+}
+
+.blue {
+    display: grid;
+    background-color: darkgray;
+    padding: 20px 20px;
+    margin: 10px 10px;
+    border: 1px solid black;
+   
+}
+
+h1 {
+    
+    text-align: center;
+}
+
+h2 {
+    
+    text-align: center;
+}
+
+h3 {
+    
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+.collapsible {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #ccc;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
