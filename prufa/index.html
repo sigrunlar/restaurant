@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+    
+    <div class="container1">
+        <div class="section">
+            <h1 class="mainh1">Assburger Delicacies
+            <h2 class="mainh2">Your local Eastern European fusion</h2>
+                <h2 class="mainh3">Scroll down for menu</h2>
+            </h1>
+            
+        </div>
+        <div class="section">
+            <div class=red></div>
+            <div class=blue >
+                <h2 class="mainh1 borders">Mean Courses</h2>
+            </div>
+            <div class=red></div>
+            <div class=red></div>
+            <div class=blue></div>
+            <div class=red></div>
+        </div>
+        <div class="section">
+            <div class=red>
+                <h2 class="mainh2">Dynryp</h2>
+                <img src="media/dynryp-md.jpg" width="300">
+                <p>Price: <strike>199 DKK</strike> 159 DKK
+                <br>Dynrup - Russisk bulgur med skovsvampe</p>
+        
+            <button class="collapsible">Read more...</button>
+            <div class="content">
+            <p>Russisk bulgur med skovsvampe fra det østlige Kirgisistan. Svampene minder om kantarelle, men med en mere støvet smag.</p>
+            <ul>
+                
+                <li>Suitable for Vegetarians</li>
+                
+                </ul>
+            </div>
+            </div>
+            <div class=blue>
+                <h2 class="mainh2">Caviar Pancakes</h2>
+                <img src="media/kaviarpandekager-md.jpg" width="300">
+                <p>Price:299 DKK
+                <br>Brændte pandekager med Bordyriske ørne-kaviar</p>
+            <button class="collapsible">Read more...</button>
+            <div class="content">
+            <p>Brændte pandekager med Bordyriske ørne-kaviar. Ørne laver kaviar på størrelse med peberkorn. Og de smager af kaviar. Ikke peber. Lækkert.</p>
+            </div>
+            </div>
+            
+            <div class=red>
+                <h2 class="mainh2">Farmer's Soup</h2>
+            <img src="media/bulgarskbondesuppe-md.jpg" width="300">
+                <p>Price:159 DKK
+                <br>Cauceskus bulgarske bondesuppe</p>
+            <button class="collapsible"><underline>Read more...</underline></button>
+            <div class="content">
+            <p>Da Caucesku var i færd med at skrive sit navn med højhuse, var han nødt til at give håndværkerne solid kost, så de kunne arbejde 18 timer i døgnet, 7 dage om ugen: Bulgarsk bondesuppe. Suppen består af alt det bedste fra Bulgarien.</p>
+            </div>
+            
+            </div>
+            <div class=red></div>
+            <div class=blue></div>
+            <div class=red></div>
+        </div>
+        <div class="section">
+        <div class=red></div>
+            <div class=blue >
+                <h2 class="mainh1 borders">Dirty Desserts</h2>
+            </div>
+            <div class=red></div>
+            <div class=red></div>
+            <div class=blue></div>
+            <div class=red></div>
+        </div>
+    
+    <div class="section">
+            <div class=red>
+                <h2 class="mainh2">Pavlova</h2>
+                <img src="media/pavlova-md.jpg" width="300">
+                <p>Price: <strike>149 DKK</strike> 159 DKK
+                <br>Dynrup - Russisk bulgur med skovsvampe</p>
+        
+            <button class="collapsible">Read more...</button>
+            <div class="content">
+            <p>Russisk bulgur med skovsvampe fra det østlige Kirgisistan. Svampene minder om kantarelle, men med en mere støvet smag.</p>
+            <ul>
+                
+                <li>Suitable for Vegetarians</li>
+                
+                </ul>
+            </div>
+            </div>
+            <div class=blue>
+                <h2 class="mainh2">Pickled Onions</h2>
+                <img src="media/syltedeloeg-md.jpg" width="300">
+                <p>Price:99 DKK
+                <br>Brændte pandekager med Bordyriske ørne-kaviar</p>
+            <button class="collapsible">Read more...</button>
+            <div class="content">
+            <p>Brændte pandekager med Bordyriske ørne-kaviar. Ørne laver kaviar på størrelse med peberkorn. Og de smager af kaviar. Ikke peber. Lækkert.</p>
+            </div>
+            </div>
+            
+            <div class=red>
+                <h2 class="mainh2">Guzni</h2>
+            <img src="media/guzni-md.jpg" width="300">
+                <p>Price:159 DKK
+                <br>Cauceskus bulgarske bondesuppe</p>
+            <button class="collapsible"><underline>Read more...</underline></button>
+            <div class="content">
+            <p>Da Caucesku var i færd med at skrive sit navn med højhuse, var han nødt til at give håndværkerne solid kost, så de kunne arbejde 18 timer i døgnet, 7 dage om ugen: Bulgarsk bondesuppe. Suppen består af alt det bedste fra Bulgarien.</p>
+            </div>
+        </div>
+    </div>
+         </div>
+         
+    
+    
+    <script src="script.js">
+        
+         var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+    
+    </script>
+</body>
+</html>

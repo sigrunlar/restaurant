@@ -1,0 +1,168 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    
+}
+
+.container1 {
+    
+    position: relative;
+    width: 100%;
+}
+
+.container1 .section {
+    
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: black;
+}
+
+.container1 .section:nth-child(1) {
+    background-image: url(media/front.jpg);
+    background-size: cover;
+}
+
+.container1 .section:nth-child(2) {
+    background-image:url(media/mean-courses.jpg);
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: minmax(300px auto);
+    grid-gap: 1em;    
+    
+}
+
+.container1 .section:nth-child(3) {
+    background-image:url(media/meal.jpg);
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: minmax(300px auto);
+    grid-gap: 1em;
+    align-items: center;
+    
+}
+
+.container1 .section:nth-child(4) {
+    background-image:url(media/dessert.jpg);
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: minmax(300px auto);
+    grid-gap: 1em;
+    align-items: center;
+    
+}
+
+.container1 .section:nth-child(5) {
+    background-image:url(media/deserts.jpg);
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: minmax(300px auto);
+    grid-gap: 1em;
+    align-items: center;
+    
+}
+
+
+.red {
+    
+    display: grid;
+    padding: 50px 20px;
+    margin: 10px 10px;
+    
+    
+    
+}
+
+.blue {
+
+    display: grid;
+    padding: 20px 20px;
+    margin: 10px 10px;
+    max-width: 300px;
+    
+   
+}
+
+.mainh1 {
+    padding-top: 200px;
+    font-family: 'cheque';
+    font-size: 5em;
+    color: white;
+    text-align: center;
+    
+}
+.mainh2 {
+    padding-top: 0px;
+    font-family: 'cheque';
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    
+    
+}
+.mainh3 {
+    padding: 0px;
+    font-family: 'aaram';
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    
+}
+
+p {
+    padding: 0px;
+    font-family: 'aaram';
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+
+li {
+    text-decoration: none;
+    padding: 0px;
+    font-family: 'aaram';
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+
+.collapsible {
+  background: none;
+  color: white;
+  cursor: pointer;
+  padding: 0px;
+  width: 100px;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 20px;
+    font-family: 'aaram';
+
+}
+
+button {
+    
+}
+
+.active, .collapsible:hover {
+  
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  
+}
+
+.borders {
+    border-top: 0.5px solid;
+    border-bottom: 0.5px solid;
+    padding: inherit;
+}

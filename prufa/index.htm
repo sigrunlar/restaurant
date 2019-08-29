@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+    
+    <div class="container1">
+        <div class="section">
+            <h1 class="mainh1">Assburger Delicacies
+            <h2 class="mainh2">Your local Eastern European fusion</h2>
+                <h2 class="mainh3">Scroll down for menu</h2>
+            </h1>
+            
+        </div>
+        <div class="section">
+            <div class=red></div>
+            <div class=blue>
+                <h2 class="mainh2">Mean Courses</h2>
+            </div>
+            <div class=red></div>
+            <div class=red>
+            <h2>Dynryp</h2>
+                    <img src="media/dynryp-md.jpg" width="200">
+                <p>Dynrup - Russisk bulgur med skovsvampe...</p>
+                <img src="media/sold-out.jpg" width="100">
+                <br>
+                <button class="collapsible">Read more</button>
+                <div class="content">
+                <p>Russisk bulgur med skovsvampe fra det østlige Kirgisistan. Svampene minder om kantarelle, men med en mere støvet smag.</p>
+            </div></div>
+            <div class=blue></div>
+            <div class=red></div>
+        </div>
+        <div class="section"></div>
+        <div class="section"></div>
+    </div>
+         
+    
+    
+    <script src="script.js">
+          var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+    
+    </script>
+</body>
+</html>
